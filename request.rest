@@ -1,0 +1,97 @@
+//create User
+###
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+    "name": "ryan lutfianto",
+    "email":"ryan019@gmail.com",
+    "password":"Agustus31",
+    "confPassword":"Agustus31",
+    "role": "user"
+}
+
+// get All Users
+###
+GET  http://localhost:8080/user
+
+//Get Single User
+###
+GET  http://localhost:8080/user/30026f46-9c6d-4eb3-b882-4742d773fca5
+
+//update user
+###
+PATCH  http://localhost:8080/user/30026f46-9c6d-4eb3-b882-4742d773fca5
+Content-Type: application/json
+
+{
+    "name": "Mutiara Dewi",
+    "email":"mutiaradewi019@gmail.com",
+    "password":"",
+    "confPassword":"",
+    "role": "user"
+}
+//delete USER
+###
+DELETE   http://localhost:8080/user/cbf440ac-bfb5-4981-912a-904647076dce
+
+//=============LOGIN USER===================================
+###
+//admin
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "email":"mutiaradewi019@gmail.com",
+    "password":"Agustus31"
+}
+
+###
+//user
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "email":"ryan019@gmail.com",
+    "password":"Agustus31"
+}
+
+
+###
+GET  http://localhost:8080/me
+
+###
+DELETE http://localhost:8080/logOut
+
+
+//=======================GET ALL PRODUCT=======================
+###
+GET  http://localhost:8080/product
+
+
+//Get single product
+###
+GET  http://localhost:8080/product/17805588-f082-4144-82a9-30450222bde4
+
+//nambah product
+###
+POST http://localhost:8080/product
+Content-Type: application/json
+
+{
+    "name": "produk 5",
+    "price": 453453
+}
+
+
+###
+PATCH  http://localhost:8080/product/661dd72c-45d0-46fc-bf71-269142b68a76
+Content-Type: application/json
+
+{
+    "name": "produk keren",
+    "price": 4242
+}
+
+###
+DELETE   http://localhost:8080/product/661dd72c-45d0-46fc-bf71-269142b68a76

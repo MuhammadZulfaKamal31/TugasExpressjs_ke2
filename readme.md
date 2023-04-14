@@ -1,0 +1,1 @@
+jadi singkatnya projectnya gini kita buat validasi login ketika kita sudah login kita bisa akses productnya kita, dan gak semua produk bisa di akses kita bisa akses semua produk jika kita itu admin, tapi kalau kita cuman sekedar user kita cuman bisa lihat produk yang di upload user doang

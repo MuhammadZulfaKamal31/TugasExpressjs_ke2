@@ -1,0 +1,31 @@
+{
+  "name": "login_exprsjs",
+  "version": "1.0.0",
+  "description": "latihan project login",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "node src/index.js"
+  },
+  "author": "Muhammad Zulfa Kamal",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-prettier": "latest",
+    "nodemon": "latest",
+    "prettier": "latest"
+  },
+  "dependencies": {
+    "argon2": "^0.30.3",
+    "connect-session-sequelize": "^7.1.5",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-session": "^1.17.3",
+    "pg": "^8.10.0",
+    "sequelize": "^6.31.0"
+  }
+}
